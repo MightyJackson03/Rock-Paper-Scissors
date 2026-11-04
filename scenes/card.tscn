@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://ru4vh6q3q8te"]
+
+[ext_resource type="Texture2D" uid="uid://dfft3q76tfn4s" path="res://assets/frames/ironFrame.png" id="1_d81rb"]
+
+[node name="Card" type="Control" unique_id=477596197]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="RootContainer" type="MarginContainer" parent="." unique_id=474760057]
+layout_mode = 0
+offset_right = 180.0
+offset_bottom = 260.0
+scale = Vector2(1, 1.0169492)
+
+[node name="Frame" type="TextureRect" parent="RootContainer" unique_id=1711436269]
+layout_mode = 2
+texture = ExtResource("1_d81rb")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="RootContainer" unique_id=1698774000]
+layout_mode = 2
+
+[node name="Header" type="HBoxContainer" parent="RootContainer/VBoxContainer" unique_id=1702009517]
+layout_mode = 2
+size_flags_vertical = 0
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 60)
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="RootContainer/VBoxContainer/Header" unique_id=1155793877]
+layout_mode = 2
+text = "Test"
+horizontal_alignment = 1
+
+[node name="Artwork" type="TextureRect" parent="RootContainer/VBoxContainer" unique_id=1155075957]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Description" type="RichTextLabel" parent="RootContainer/VBoxContainer" unique_id=562383805]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="DropZoneDetector" type="Control" parent="." unique_id=64412703]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
